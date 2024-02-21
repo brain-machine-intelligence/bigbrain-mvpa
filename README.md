@@ -28,7 +28,7 @@
     - output
         - bold activity array (N_voxel x N_event x N_trial)
 
-### Shattering dimensionality analysis [3, 4]. 
+### Shattering dimensionality analysis [1, 2]. 
  To assess the amount of information associated with the task variables in multi-voxel patterns of brain regions, we computed the shattering dimensionality (SD) by averaging test accuracies of all linear support vector machines (SVM) trained to classify goal and uncertainty conditions. Accordingly, the SD quantiﬁes the separability of neural embeddings associated with each task condition. Since it is based on binary classiﬁers, the chance level is 0.5.
 
 * main function: arbMBMF_shattering.m
@@ -53,6 +53,12 @@
     - output
         - run_info, save_info (save them to the designated path)
 
-### Cross-condition generalization analysis [4]
+### Cross-condition generalization analysis [2]
  To investigate the eﬀect of one task variable (A) on another variable(B)'s representation, we performed another SD analysis, in which SVMs were trained in one condition of variable 'A' and tested in the other conditions of it to decode variable 'B'. The average test accuracy is called the CCGP score.
+
+## References
+[1] Rigotti, M., Barak, O., Warden, M. R., Wang, X. J., Daw, N. D., Miller, E. K., & Fusi, S. The importance of mixed selectivity in complex cognitive tasks. Nature, 497(7451), 585-590 (2013).
+
+[2] Bernardi, S., Benna, M. K., Rigotti, M., Munuera, J., Fusi, S., & Salzman, C. D. The geometry of abstraction in the hippocampus and prefrontal cortex. Cell, 183(4), 954-967 (2020).
+
 
